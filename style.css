@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
+    width: 100%;
+    height: 100%;
+}
+
+.thingItself {
+    position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
+    width: 512px;
+    height: 412px;
+    background: url(goeshard.png);
+    background-size:100% 100%;
+  }
+
+.ipContainer {
+    width: 400px;
+    height: 100px;
+}
+
+#ipAddress {
+    color: #ffffff; 
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 40px;
+    width: 30em;
+    animation: type 9s steps(90, end); 
+  }
+  
+@keyframes type{ 
+    from { width: 0; } 
+  } 
